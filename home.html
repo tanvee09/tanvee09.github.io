@@ -22,6 +22,21 @@
             color : black;
         }
 
+        .navbar_below {
+            overflow: hidden;
+            background-color: #333;
+            width: 60px; /* Full width */
+        }
+
+        .navbar_below a {
+            float : left;
+            display : block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration : none;
+        }
+
         .navbar {
             overflow: hidden;
             background-color: #333;
@@ -58,8 +73,13 @@
 
         @media screen and (max-width: 400px) {
             .navbar a {
-            float: none;
-            width: 100%;
+                float: none;
+                width: 100%;
+            }
+
+            .row {
+                margin-top: 52px;
+            }
         }
     </style>
 
@@ -70,7 +90,7 @@
 <body>
     <div class = "navbar">
         <a href = "https:/tanvee09.github.io/home.html" class = "home">HOME</a>
-        <a href = "about.html">ABOUT</a>
+        <a href = "https:/tanvee09.github.io/about.html">ABOUT</a>
         <a href = "#">LINK</a>
         <a href = "#">GALLERY</a>
         <a href = "#" class = "right">CONTACT</a>
@@ -79,6 +99,10 @@
     <div class = "header">
         <h1>TANVEE'S LAIR</h1>
         <p>A website created by me.</p>
+    </div>
+
+    <div class = "navbar_below">
+        <a href = "http:/google.com"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/314px-Google_%22G%22_Logo.svg.png" width = 30px height = 30px/></a>
     </div>
     
 </body>

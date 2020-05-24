@@ -13,6 +13,21 @@
             margin : 0;
         }
 
+        img {
+            
+  background: white;
+  height: 200px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+}
+        
+
         .navbar {
             overflow: hidden;
             background-color: #333;
@@ -47,34 +62,37 @@
             background-color : greenyellow;
         }
 
-        .row {  
-            margin-top: 26px; /* Add a top margin to avoid content overlay */
-            display: -ms-flexbox; /* IE10 */
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            margin-top: 26px;
             display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
         }
 
-        .side {
-            -ms-flex: 30%; /* IE10 */
-            flex: 30%;
-            background-color: #f1f1f1;
-            padding: 20px;
+        .column1 {
+            flex : 30%;
+            float : center;
+            padding : 10px;
         }
-
-        .main {   
-            -ms-flex: 70%; /* IE10 */
-            flex: 70%;
-            background-color: white;
-            padding: 20px;
+        
+        .column2 {
+            flex : 70%;
+            float : center;
+            padding : 10px;
         }
 
         @media screen and (max-width: 400px) {
             .navbar a {
-            float: none;
-            width: 100%;
+                float: none;
+                width: 100%;
+            }
+
+            .row {
+                margin-top: 52px;
+            }
         }
-}
     </style>
     
 </head>
@@ -89,29 +107,13 @@
         <a href = "#" class = "right">CONTACT</a>
     </div>
 
-    <div class = "row">
-        <div class = "side">
-          <h2>About Me</h2>
-          <img src = "https://media-exp1.licdn.com/dms/image/C5603AQEWmxhuXjmxgA/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=aEcd65-ZOsrK1Gn2C_cKIabaGnEVIZlCP88kBAZ9Rnw" height = 300px width = 300px/>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          <h3>More Text</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <div class = "fakeimg" style = "height:60px;">Image</div><br>
-          <div class = "fakeimg" style = "height:60px;">Image</div><br>
-          <div class = "fakeimg" style = "height:60px;">Image</div>
+    <div class="row">
+        <div class="column1" style="background-color:#aaa;">
+          <img src = "https://media-exp1.licdn.com/dms/image/C5603AQEWmxhuXjmxgA/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=aEcd65-ZOsrK1Gn2C_cKIabaGnEVIZlCP88kBAZ9Rnw" height = 300px width = 300px style = "vertical-align:middle;"/>
         </div>
-        <div class = "main">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class = "fakeimg" style = "height:200px;">Image</div>
+        <div class="column2" style="background-color:#bbb;">
+          <h2>Column 2</h2>
           <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <br>
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class = "fakeimg" style = "height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
       </div>
 
