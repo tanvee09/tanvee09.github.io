@@ -14,9 +14,11 @@
         }
 
         .navbar {
-            margin-top: 26px; /* Add a top margin to avoid content overlay */
             overflow: hidden;
             background-color: #333;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
         }
 
         .navbar a {
@@ -26,9 +28,6 @@
             text-align: center;
             padding: 14px 26px;
             text-decoration: none;
-            position: fixed; /* Set the navbar to fixed position */
-            top: 0; /* Position the navbar at the top of the page */
-            width: 100%; /* Full width */
         }
 
         .navbar a.home {
