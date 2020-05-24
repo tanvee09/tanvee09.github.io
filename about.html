@@ -14,19 +14,32 @@
         }
 
         img {
-            
-  background: white;
-  height: 200px;
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  resize: both;
-  overflow: auto;
-}
+            background: white;
+            height: 200px;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            resize: both;
+            overflow: auto;
+        }
         
+        .navbar_below {
+            overflow: hidden;
+            background-color: #333;
+            width: 60px; /* Full width */
+        }
+
+        .navbar_below a {
+            float : left;
+            display : block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration : none;
+        }
 
         .navbar {
             overflow: hidden;
@@ -115,7 +128,11 @@
           <h2>Column 2</h2>
           <p>Some text..</p>
         </div>
-      </div>
+    </div>
+
+    <div class = "navbar_below">
+        <a href = "http:/google.com"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/314px-Google_%22G%22_Logo.svg.png" width = 30px height = 30px/></a>
+    </div>
 
     
 </body>
