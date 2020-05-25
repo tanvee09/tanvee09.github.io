@@ -13,6 +13,23 @@
                 color : black;
             }
 
+            .navbar_below {
+                overflow: hidden;
+                background-color: #333;
+                width: 60px; /* Full width */
+                bottom : 0;
+                position : fixed;
+            }
+
+            .navbar_below a {
+                float : left;
+                display : block;
+                color: white;
+                text-align: center;
+                padding: 15px 15px;
+                text-decoration : none;
+            }
+
             .navbar {
                 overflow: hidden;
                 background-color: #333;
@@ -84,6 +101,20 @@
                 text-decoration : none;
             }
 
+            .mid-container {
+                text-align : center;
+                padding : 20px 20px;
+                color : gray;
+                background-color : rgb(233, 227, 227);
+            }
+
+            .container3 {
+                text-align: center;
+                padding : 20px 20px;
+                color : white;
+                background-color : black;
+            }
+
             @media screen and (max-width: 400px) {
                 .navbar a {
                     float: none;
@@ -108,7 +139,31 @@
             <p style = "font-size : 80px; font-weight : bold;">---TANVEE BALHARA---</p>
             <BR/><BR/><BR/><BR/><BR/><BR/>
         </div>
-        
+
+        <div class = "container3">
+            <BR/><BR/>
+            <p style = "font-size : 25px; font-style : italic;">
+                I am an undergraduate student pursuing Computer Engineering. <br><br><br>
+                ____THINGS I LIKE DOING___<br><br>
+                Playing Basketball
+            </p>
+            <BR/>
+            <img src = "bb.jpg" height = 80px width = 80px/>
+            <BR/><BR/>
+            <p style = "font-size : 25px; font-style : italic;">
+                Reading Books
+            </p>
+            <BR/>
+            <img src = "book.jpg" height = 80px width = 110px/>
+            <BR/><BR/>
+            <p style = "font-size : 25px; font-style : italic;">
+                Watching Movies
+            </p>
+            <BR/>
+            <img src = "movie.png" height = 90px width = 80px/>
+            <BR/><BR/>
+        </div>
+
         <p style = "font-size : 40px; font-weight : bold; text-align : center;">:: Education ::</p>
         <br/>
         <div class="row">
@@ -117,8 +172,9 @@
             <img src = "xavier.jpg" height = 200px width = 200px/>
             </div>
             <div class="column2">
-                <h2 style = "color : blue;">Secondary Education</h2>
+                <h2 style = "color : rgb(45, 126, 154); font-weight : normal;">Secondary Education</h2>
                 <a href = "http://www.xaviersrohini.edu.in/" style = "font-size : 18px; color : green; font-weight : bold;">St. Xavier's School</a>
+                <p style = "color : gray">Completed in 2019</p>
             </div>
         </div>
         <br/>
@@ -128,9 +184,22 @@
             <img src = "nsit.jpg" height = 200px width = 200px/>
             </div>
             <div class="column2">
-                <h2 style = "color : blue;">B.Tech. in Computer Engineering</h2>
-                <a href = "www.nsit.ac.in" style = "font-size : 18px; color : green; font-weight : bold;">Netaji Subhas University of Technology</a>
+                <h2 style = "color : rgb(45, 126, 154); font-weight : normal;">B.Tech. in Computer Engineering</h2>
+                <a href = "http:/nsit.ac.in" style = "font-size : 18px; color : green; font-weight : bold;">Netaji Subhas University of Technology</a>
+                <p style = "color : gray">Currently pursuing (2019-2023)</p>
             </div>
+        </div>
+
+        <div class = "mid-container">
+            <H1>Google TSWE - 2020 Scholar</H1>
+                <BR/>
+                <img src = "ts.png" height = 100px width = 100px/>
+                <img src = "google.png" height = 100px width = 250px/>
+                <BR/>
+        </div>
+
+        <div class = "navbar_below">
+            <a href = "http:/google.com"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/314px-Google_%22G%22_Logo.svg.png" width = 30px height = 30px/></a>
         </div>
     </body>
 
