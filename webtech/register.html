@@ -12,8 +12,11 @@
         body {
             font-family : Arial, Helvetica, sans-serif;
             margin : 0;
-            background-color : white;
+            background-image : url('images/background.jpg');
+            background-repeat: round;
+            height: 100%;
             color : black;
+
         }
 
         .navbar_below {
@@ -78,12 +81,34 @@
         <a href = "results.html">RESULTS</a>
         <a href = "register.html" class = "right" style = "background-color : blue;">REGISTER</a>
     </div>
-    <br/><br/>
-    <h1 align = "center">WINTER SPORTS REGISTRATION FORM</h1>
-    <hr/>
+    <br/>
+    <h1 align = "center" style="background-color:aliceblue; padding: 10px;">WINTER SPORTS REGISTRATION FORM</h1>
 
+    
+    <div style="width: 65%; margin: auto; border: 2px solid black; opacity: 0.8; background-image: linear-gradient(to bottom right, rgb(117, 226, 231), rgb(88, 140, 219));">
+        <h3 align = "center" style="text-decoration: underline;">INSTRUCTIONS</h3>
+        <ol>
+            <li>
+                Please fill your name and roll number with care. No requests for correction will be entertained later.
+            </li>
+            <li>
+                You can choose to participate in as many sports as you want but the authorities won't entertain any request for change in schedule in case of timing clash.
+            </li>
+            <li>
+                Filling the form does not confirm your selection in the teams. Team leaders already appointed by the respective sports coaches will take the trials and their decision will be final.
+            </li>
+            <li>
+                The information about the number of players required for all the sports along with other details is listed on the main page.
+            </li>
+            <li>
+                Information regarding the date and time of trials will be mailed to ypu atleast two days in prior. So keep checking you inboxes.
+            </li>
+        </ol>
+    </div>    
+
+    <br/>
     <form>
-        <table align="center" border="1px" bgcolor=lightyellow style="width: 60%;">
+        <table align="center" border="1px" bgcolor=aliceblue style="width: 65%;">
             <tr>
                 <td><strong>Name</strong></td>
                 <td><input type="text" style="width: 98%"></td>
@@ -150,6 +175,31 @@
                     <label>
                         BT
                         <input name="branch" value="bt" type="radio"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Sports</strong></td>
+                <td>
+                    <label>
+                        Basketball
+                        <input name="sports" value="basketball" type="checkbox"/>
+                    </label>
+                    <label>
+                        Volleyball
+                        <input name="sports" value="volleyball" type="checkbox"/>
+                    </label>
+                    <label>
+                        Cricket
+                        <input name="sports" value="cricket" type="checkbox"/>
+                    </label>
+                    <label>
+                        Football
+                        <input name="sports" value="football" type="checkbox"/>
+                    </label>
+                    <label>
+                        Kabaddi
+                        <input name="sports" value="kabaddi" type="checkbox"/>
                     </label>
                 </td>
             </tr>
