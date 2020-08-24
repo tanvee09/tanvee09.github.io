@@ -5,7 +5,7 @@
 
 <head>
 
-    <title>WINTER SPORTS</title>
+    <title>REGISTER</title>
 
     <style>
 
@@ -79,8 +79,86 @@
         <a href = "register.html" class = "right" style = "background-color : blue;">REGISTER</a>
     </div>
     <br/><br/>
-    <h1><center>WINTER SPORTS SCHEDULE</center></h1>
+    <h1 align = "center">WINTER SPORTS REGISTRATION FORM</h1>
+    <hr/>
 
+    <form>
+        <table align="center" border="1px" bgcolor=lightyellow style="width: 60%;">
+            <tr>
+                <td><strong>Name</strong></td>
+                <td><input type="text" style="width: 98%"></td>
+            </tr>
+            <tr>
+                <td><strong>Roll Number</strong></td>
+                <td><input type="text" style="width: 98%"></td>
+            </tr>
+            <tr>
+                <td><strong>Email-Id</strong></td>
+                <td><input type="email" style="width: 98%"></td>
+            </tr>
+            <tr>
+                <td><strong>Semester</strong></td>
+                <td>
+                    <select name="sem">
+                        <option>2</option>
+                        <option>4</option>
+                        <option>6</option>
+                        <option>8</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Gender</strong></td>
+                <td>
+                    <label>
+                        Male
+                        <input name="gender" value="male" type="radio" checked="checked"/>
+                    </label>
+                    <label>
+                        Female
+                        <input name="gender" value="female" type="radio"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Branch</strong></td>
+                <td>
+                    <label>
+                        CSAI
+                        <input name="branch" value="csai" type="radio" checked="checked"/>
+                    </label>
+                    <label>
+                        COE
+                        <input name="branch" value="coe" type="radio"/>
+                    </label>
+                    <label>
+                        MAC
+                        <input name="branch" value="mac" type="radio"/>
+                    </label>
+                    <label>
+                        ECE
+                        <input name="branch" value="ece" type="radio"/>
+                    </label>
+                    <label>
+                        ME
+                        <input name="branch" value="me" type="radio"/>
+                    </label>
+                    <label>
+                        MPAE
+                        <input name="branch" value="mpae" type="radio"/>
+                    </label>
+                    <label>
+                        BT
+                        <input name="branch" value="bt" type="radio"/>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <p align = "Center">
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Clear"/>
+        </p>
+    </form>
 </body>
 
 
