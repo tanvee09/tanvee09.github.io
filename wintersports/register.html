@@ -7,10 +7,12 @@
 
     <title>REGISTER</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
+
     <style>
 
         body {
-            font-family : Arial, Helvetica, sans-serif;
+            font-family: 'Public Sans', sans-serif;
             margin : 0;
             background-image : url('images/background.jpg');
             background-repeat: round;
@@ -68,6 +70,20 @@
         .navbar a.home:hover {
             background-color : greenyellow;
         }
+
+        .button {
+            transition-duration: 0.4s;
+            padding: 12px 24px;
+            font-size: 14px;
+            background-color: aliceblue;
+        }
+
+        .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: blue;
+            color: white;
+        }
+
     </style>
 
 </head>
@@ -86,7 +102,7 @@
 
     
     <div style="width: 65%; margin: auto; border: 2px solid black; opacity: 0.8; background-image: linear-gradient(to bottom right, rgb(117, 226, 231), rgb(88, 140, 219));">
-        <h3 align = "center" style="text-decoration: underline;">INSTRUCTIONS</h3>
+        <h3 align = "center" style="text-decoration: underline;"><strong>INSTRUCTIONS</strong></h3>
         <ol>
             <li>
                 Please fill your name and roll number with care. No requests for correction will be entertained later.
@@ -101,7 +117,7 @@
                 The information about the number of players required for all the sports along with other details is listed on the main page.
             </li>
             <li>
-                Information regarding the date and time of trials will be mailed to ypu atleast two days in prior. So keep checking you inboxes.
+                Information regarding the date and time of trials will be mailed to you atleast two days in prior. So keep checking you inboxes.
             </li>
         </ol>
     </div>    
@@ -201,12 +217,16 @@
                         Kabaddi
                         <input name="sports" value="kabaddi" type="checkbox"/>
                     </label>
+                    <label>
+                        Badminton
+                        <input name="sports" value="badminton" type="checkbox"/>
+                    </label>
                 </td>
             </tr>
         </table>
         <p align = "Center">
-            <input type="submit" value="Submit"/>
-            <input type="reset" value="Clear"/>
+            <input class = "button" type="submit" value="Submit"/>
+            <input class = "button" type="reset" value="Clear"/>
         </p>
     </form>
 </body>
