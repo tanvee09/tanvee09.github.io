@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Progress Bar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="main">
+            <div class="bar b1"></div>
+            <div class="circle c1"><span>&#10003;</span></div>
+            <div class="bar b2"></div>
+            <div class="circle c2"><span>&#10003;</span></div>
+            <div class="bar b3"></div>
+            <div class="circle c3"><span>&#10003;</span></div>
+            <div class="bar b4"></div>
+            <div class="circle c4"><span>&#10003;</span></div>
+            <div class="bar b5"></div>
+        </div>
+
+        <br>
+
+        <div class="below"></div>
+        <div class="write w1"><p>One</p></div>
+        <div class="below"></div>
+        <div class="write w2"><p>Two</p></div>
+        <div class="below"></div>
+        <div class="write w3"><p>Three</p></div>
+        <div class="below"></div>
+        <div class="write w4"><p>Complete</p></div>
+        <div class="below"></div>
+
+        <br><br><br>
+
+        <button class="back" onclick="progressPrev()">Back</button>
+        <button class="next" onclick="progressNext()">Next</button>
+        <p>Step: </p>
+        <p id="step" style="width: 5rem; display: inline-block; text-align: left;">Begin</p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div id="congrats">Yay! You have completed the task!</div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

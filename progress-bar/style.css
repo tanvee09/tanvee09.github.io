@@ -1,0 +1,107 @@
+body {
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    /* background-image: url("confetti.gif"); */
+    background-size: cover;
+}
+
+.main {
+    margin-top: 10rem;
+}
+
+.bar {
+    background-color: rgb(229, 226, 226);
+    width: 12.5%;
+    height: 1.5rem;
+    position: relative;
+    z-index: -1;
+    display: inline-block;
+    margin: -16px;  
+    vertical-align: middle;
+    border-radius: 0.75rem;
+    transition: background-color 1s ease-in-out;
+}
+
+.circle {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    border: 0.25rem solid rgb(158, 157, 157);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    transition: background-color 1.2s ease-in-out;
+}
+
+span {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.b1 {
+    margin-left: 0;
+}
+
+
+.b5 {
+    margin-right: 0;
+}
+
+button {
+    height: 2.5rem;
+    width: 4rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    border: 3px solid rgb(158, 157, 157);
+    border-radius: 0.3rem;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 4px 13px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    display: inline;
+}
+
+.below {
+    width: 12.5%;
+    height: 1.5rem;
+    position: relative;
+    display: inline-block;
+    margin: -16px;
+    vertical-align: middle;
+    border-radius: 0.75rem;
+}
+
+.write {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0.25rem solid white;
+    border-radius: 50%;
+    width: 3rem;
+    font-weight: normal;
+}
+
+.write:before {
+    content: "";
+    margin-left: -100%;
+}
+
+.write:after {
+    content: "";
+    margin-right: -100%;
+}
+
+#congrats {
+    display: none;
+}
