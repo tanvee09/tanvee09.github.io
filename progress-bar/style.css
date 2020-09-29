@@ -5,10 +5,11 @@ body {
     font-weight: bold;
     /* background-image: url("confetti.gif"); */
     background-size: cover;
+    font-family: 'Lato', sans-serif;
 }
 
 .main {
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .bar {
