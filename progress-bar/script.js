@@ -1,113 +1,74 @@
 var curr = 0;
 
+var step = {
+    0: "Begin",
+    1: "One",
+    2: "Two",
+    3: "Three",
+    4: "Complete"
+};
+
+
 function progressNext() {
-    if (curr == 0) {
-        document.getElementsByClassName('b1')[0].style.backgroundColor = "blue";
 
-        document.getElementsByClassName('w1')[0].style.color = "blue";
-        document.getElementsByClassName('w1')[0].style.fontWeight = "bold";
+    if (curr == 4) {
+        alert("You have reached the end. You cannot go any further.");
+        return;
+    }
 
-        document.getElementById('step').innerHTML = "One";
-        curr += 1;
+    curr += 1;
 
-    } else if (curr == 1) {
-        document.getElementsByClassName('b2')[0].style.backgroundColor = "blue";
-        document.getElementsByClassName('c1')[0].style.backgroundColor = "green";
-        document.getElementsByClassName('c1')[0].style.borderColor = "blue";
+    document.getElementsByClassName('b' + curr)[0].style.backgroundColor = "blue";
+    document.getElementsByClassName('w' + curr)[0].style.color = "blue";
+    document.getElementsByClassName('w' + curr)[0].style.fontWeight = "bold";
 
-        document.getElementsByClassName('w1')[0].style.color = "green";
-        document.getElementsByClassName('w2')[0].style.color = "blue";
-        document.getElementsByClassName('w2')[0].style.fontWeight = "bold";
+    if (curr != 1) {
+        document.getElementsByClassName('c' + (curr - 1))[0].style.backgroundColor = "green";
+        document.getElementsByClassName('c' + (curr - 1))[0].style.borderColor = "blue";
+        document.getElementsByClassName('w' + (curr - 1))[0].style.color = "green";
+    }
+        
+    if (curr == 4) {
+        document.getElementsByClassName('b' + (curr + 1))[0].style.backgroundColor = "blue";
+        document.getElementsByClassName('c' + curr)[0].style.backgroundColor = "green";
+        document.getElementsByClassName('c' + curr)[0].style.borderColor = "blue";
 
-        document.getElementById('step').innerHTML = "Two";
-        curr += 1;
-
-    } else if (curr == 2) {
-        document.getElementsByClassName('b3')[0].style.backgroundColor = "blue";
-        document.getElementsByClassName('c2')[0].style.backgroundColor = "green";
-        document.getElementsByClassName('c2')[0].style.borderColor = "blue";  
-
-        document.getElementsByClassName('w2')[0].style.color = "green";
-        document.getElementsByClassName('w3')[0].style.color = "blue";
-        document.getElementsByClassName('w3')[0].style.fontWeight = "bold";
-
-        document.getElementById('step').innerHTML = "Three";
-        curr += 1;
-
-    } else if (curr == 3) {
-        document.getElementsByClassName('b4')[0].style.backgroundColor = "blue";
-        document.getElementsByClassName('c3')[0].style.backgroundColor = "green";
-        document.getElementsByClassName('c3')[0].style.borderColor = "blue";
-
-        document.getElementsByClassName('b5')[0].style.backgroundColor = "blue";
-        document.getElementsByClassName('c4')[0].style.backgroundColor = "green";
-        document.getElementsByClassName('c4')[0].style.borderColor = "blue";
-
-        document.getElementsByClassName('w3')[0].style.color = "green";
-        document.getElementsByClassName('w4')[0].style.color = "green";
-        document.getElementsByClassName('w4')[0].style.fontWeight = "bold";
+        document.getElementsByClassName('w' + curr)[0].style.color = "green";
+        document.getElementsByClassName('w' + curr)[0].style.fontWeight = "bold";
 
         document.getElementsByTagName('body')[0].style.backgroundImage = 'url("confetti.gif")';
         document.getElementById("congrats").style.display = "inline-block";
-
-        document.getElementById('step').innerHTML = "Complete";
-        curr += 1;
-
-    } else if (curr == 4) {
-        alert("You have reached the end. You cannot go any further.");
     }
+
+    document.getElementById('step').innerHTML = step[curr];
 }
 
+
 function progressPrev() {
+    
     if (curr == 0) {
         alert("You are already at the beginning. You cannot go behind this.");
-    } else if (curr == 1) {
-        document.getElementsByClassName('b1')[0].style.backgroundColor = "";
+    } 
+    
+    document.getElementsByClassName('b' + curr)[0].style.backgroundColor = ""; 
+    document.getElementsByClassName('w' + curr)[0].style.color = "black";
+    document.getElementsByClassName('w' + curr)[0].style.fontWeight = "normal";  
 
-        document.getElementsByClassName('w1')[0].style.color = "black";
-        document.getElementsByClassName('w1')[0].style.fontWeight = "normal";
+    if (curr != 1) {
+        document.getElementsByClassName('c' + (curr - 1))[0].style.backgroundColor = "white";
+        document.getElementsByClassName('c' + (curr - 1))[0].style.borderColor = "gray";
+        document.getElementsByClassName('w' + (curr - 1))[0].style.color = "blue";
+    }
+    
+    if (curr == 4) {
+        document.getElementsByClassName('b' + (curr + 1))[0].style.backgroundColor = "";
+        document.getElementsByClassName('c' + curr)[0].style.backgroundColor = "white";
+        document.getElementsByClassName('c' + curr)[0].style.borderColor = "gray";
 
-        document.getElementById('step').innerHTML = "Begin";
-        curr -= 1;
-    } else if (curr == 2) {
-        document.getElementsByClassName('b2')[0].style.backgroundColor = "";
-        document.getElementsByClassName('c1')[0].style.backgroundColor = "white";
-        document.getElementsByClassName('c1')[0].style.borderColor = "gray";
-
-        document.getElementsByClassName('w1')[0].style.color = "blue";
-        document.getElementsByClassName('w2')[0].style.color = "black";
-        document.getElementsByClassName('w2')[0].style.fontWeight = "normal";
-
-        document.getElementById('step').innerHTML = "One";
-        curr -= 1;
-    } else if (curr == 3) {
-        document.getElementsByClassName('b3')[0].style.backgroundColor = "";
-        document.getElementsByClassName('c2')[0].style.backgroundColor = "white";
-        document.getElementsByClassName('c2')[0].style.borderColor = "gray";
-
-        document.getElementsByClassName('w2')[0].style.color = "blue";
-        document.getElementsByClassName('w3')[0].style.color = "black";
-        document.getElementsByClassName('w3')[0].style.fontWeight = "normal";
-
-        document.getElementById('step').innerHTML = "Two";
-        curr -= 1;
-    } else if (curr == 4) {
-        document.getElementsByClassName('b4')[0].style.backgroundColor = "";
-        document.getElementsByClassName('b5')[0].style.backgroundColor = "";
-        document.getElementsByClassName('c3')[0].style.backgroundColor = "white";
-        document.getElementsByClassName('c3')[0].style.borderColor = "gray";
-        document.getElementsByClassName('c4')[0].style.backgroundColor = "white";
-        document.getElementsByClassName('c4')[0].style.borderColor = "gray";
-
-        document.getElementsByClassName('w3')[0].style.color = "blue";
-        document.getElementsByClassName('w4')[0].style.color = "black";
-        document.getElementsByClassName('w4')[0].style.fontWeight = "normal";
-
-        document.getElementsByTagName('body')[0].style.backgroundImage = '';
+        document.getElementsByTagName('body')[0].style.backgroundImage = "";
         document.getElementById("congrats").style.display = "none";
-
-        document.getElementById('step').innerHTML = "Three";
-        curr -= 1;
     }
 
+    document.getElementById('step').innerHTML = step[curr];
+    curr -= 1;
 }
