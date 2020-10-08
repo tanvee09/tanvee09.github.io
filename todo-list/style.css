@@ -58,7 +58,7 @@ input[type=text]:focus {
     height: 2.5rem;
     /* text-decoration: line-through; */
     text-decoration: none;
-    /* font-weight: bold; */
+    cursor: pointer;
 }
 
 #tasks tr:nth-child(even) {
