@@ -2,7 +2,7 @@
     background: linear-gradient(to right, #66ffcc 0%, #ccffff 100%);
 }
 
-.window {
+.profile {
     background-color: #f0f3f3;
     margin: 3rem;
     width: 90%;
@@ -14,7 +14,7 @@
     font-size: 23px;
 }
 
-.window img {
+.profile img {
     margin-top: 140px;
     margin-bottom: 140px;
     margin-left: 100px;
@@ -27,7 +27,7 @@
     transition: transform 0.5s;
 }
 
-.window img:hover {
+.profile img:hover {
     transform: scale(1.02);
 }
 
