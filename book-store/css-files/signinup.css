@@ -1,0 +1,55 @@
+.body {
+    background: linear-gradient(to right, #66ffcc 0%, #ccffff 100%);
+}
+
+.window {
+    background-color: #e4e6e6;
+    margin: 5rem;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 500px; */
+    box-shadow: 10px 10px #c5c3c3;
+    vertical-align: middle;
+    font-size: 23px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.fa-sign-in-alt, .fa-user-plus {
+    color: rgb(134, 134, 134);
+    margin: 3rem;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 70%;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    outline: none;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 20px;
+    margin: 1.5rem;
+    width: 30%;
+    background: linear-gradient(to right, #dcad4a 0%, #fcda28 100%);
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-bottom: 4rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}

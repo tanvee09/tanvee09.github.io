@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cart</title>
+        <link rel="stylesheet" href="./css-files/style.css">
+        <link rel="stylesheet" href="./css-files/cartpage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="nav">
+                <a href="/">BOOK STORE</a>
+            </div>
+            <div class="nav">
+                <a href="catalog.html">Catalog</a>
+            </div>
+            <div class="nav right">
+                <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i>(2)</a>
+            </div>
+            <div class="nav right divider">|</div>
+            <div class="nav right">
+                <a href="userprofile.html">Profile <i class="fas fa-user-circle" style="font-size: 22px;"></i></a>
+            </div>
+            <div class="nav right divider">|</div>
+            <div class="nav right">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav right">
+                <a href="signin.html">Sign In</a>
+            </div>           
+        </div>
+
+        <h2 class="pgtitle">Shopping Cart</h2>
+        
+        <div class="card">
+            <img src="assets/1.jpg">
+            <table>
+                <tr>
+                    <td class="header">
+                        <p class="booktitle">A Brief History of Time&nbsp;&nbsp;</p>
+                        <p class="bookauthor">by Stephen Hawking</p>
+                    </td>
+                    <td>
+                        <p><strong>Price: Rs. 400</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="color: rgb(128, 123, 123);">Paperback</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="color: green;">In stock</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="gift" id="gift">
+                        <label for="gift"><p>This is a gift</p></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Quantity&nbsp;&nbsp;</p>
+                        <input type="number"id="qty" placeholder="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" style="color:rgb(73, 163, 133)">Delete</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <img src="assets/2.jpg">
+            <table>
+                <tr>
+                    <td class="header">
+                        <p class="booktitle">Diary of a Wimpy Kid Book 13&nbsp;&nbsp;</p>
+                        <p class="bookauthor">by Jeff Kinney</p>
+                    </td>
+                    <td>
+                        <p><strong>Price: Rs. 250</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="color: rgb(128, 123, 123);">Hardcover</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="color: green;">In stock</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="gift" id="gift">
+                        <label for="gift"><p>This is a gift</p></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Quantity&nbsp;&nbsp;</p>
+                        <input type="number"id="qty" placeholder="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" style="color:rgb(73, 163, 133)">Delete</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="checkout">
+            <p class="checkoutprice">Subtotal (2 items): Rs 650</p>
+            <button id="pay">Proceed to checkout</button>
+        </div>
+
+
+    </body>
+</html>

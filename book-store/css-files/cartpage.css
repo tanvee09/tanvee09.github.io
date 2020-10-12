@@ -1,0 +1,94 @@
+.pgtitle {
+    padding: 20px;
+    width: 65%;
+    border-bottom: 4px solid mediumaquamarine;
+    /* margin-bottom: 2.5rem; */
+}
+
+.card {
+    border: 5px solid mediumaquamarine;
+    /* height: 20rem; */
+    background-color: #f0f3f3;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px #dddcdc;
+    margin: 2rem;
+}
+
+.card img {
+    height: 15rem;
+    float: left;
+    margin: 2.5rem;
+    transition: transform 0.5s;
+}
+
+.card img:hover {
+    transform: scale(1.02);
+}
+
+.card p {
+    font-size: 18px;
+    display: inline;
+}
+
+.header p {
+    font-size: 22px;
+}
+
+.booktitle {
+    font-weight: bold;
+    color: rgb(73, 163, 133);
+}
+
+table {
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+}
+
+td {
+    padding-right: 40px;
+}
+
+#qty {
+    width: 3rem;
+}
+
+.checkout {
+    /* height: 20rem; */
+    width: 20%;
+    position: fixed;
+    top: 30%;
+    right: -1rem;
+    background-color: gainsboro;
+    border-radius: 1rem;
+    border: 2px solid darkgray;
+    padding-right: 1.5rem;
+}
+
+.checkoutprice {
+    font-weight: bold;
+    margin: 1.5rem;
+    font-size: 22px;
+}
+
+.checkout button {
+    padding: 0.5rem;
+    font-size: 16px;
+    margin: 1.5rem;
+    /* background-color: #dcad4a; */
+    background: linear-gradient(to right, #dcad4a 0%, #fcda28 100%);
+    border-radius: 0.5rem;
+    border: 2px solid black;
+}
+
+.checkout button:hover {
+    cursor: pointer;
+}
+
+.checkout button:focus {
+    outline: none;
+}
