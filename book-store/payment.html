@@ -1,0 +1,116 @@
+<!DOCTYPE html><!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Payment</title>
+        <link rel="stylesheet" href="./css-files/style.css">
+        <link rel="stylesheet" href="./css-files/confirmationpage.css">
+        <link rel="stylesheet" href="./css-files/paymentpage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="nav">
+                <a href="index.html">BOOK STORE</a>
+            </div>
+            <div class="nav">
+                <a href="catalog.html">Catalog</a>
+            </div>
+            <div class="nav right">
+                <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i>(2)</a>
+            </div>
+            <div class="nav right divider">|</div>
+            <div class="nav right">
+                <a href="userprofile.html">Profile <i class="fas fa-user-circle" style="font-size: 22px;"></i></a>
+            </div>
+            <div class="nav right divider">|</div>
+            <div class="nav right">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav right">
+                <a href="signin.html">Sign In</a>
+            </div>           
+        </div>
+
+        <table class="step">
+            <tr>
+                <td>Order</td>
+                <td class="curr">Payment</td>
+                <td>Confirm</td>
+            </tr>
+        </table>
+
+        <table class="types">
+            <tr>
+                <th colspan="2">> Pay with online wallets</th>
+            </tr>
+            <tr>
+                <td style="border-right: 1px solid darkgray; width: 20%;">The faster, safer<br>way to pay</td>
+                <td>
+                    <a href="#"><img src="./assets/google-wallet.png"></a>
+                    <a href="#"><img src="./assets/paytm.png"></a>
+                    <a href="#"><img src="./assets/paypal.png"></a>
+                </td>
+            </tr>
+        </table>
+
+        <form>
+            <table class="types">
+                <tr>
+                    <th colspan="2">> Pay with debit or credit card</th>
+                </tr>
+                <tr>
+                    <td style="width: 30%; text-align: right;">Card Type</td>
+                    <td>
+                        <input type="radio" id="visa" name="cardtype">
+                        <label for="visa"><img src="./assets/visa.png"></label>
+
+                        <input type="radio" id="mastercard" name="cardtype">
+                        <label for="mastercard"><img src="./assets/master-card.png"></label>
+                        
+                        <input type="radio" id="hsbccard" name="cardtype">
+                        <label for="hsbccard"><img src="./assets/hsbc.png"></label>
+                        
+                        <input type="radio" id="citicard" name="cardtype">
+                        <label for="citicard"><img src="./assets/citi.png"></label>
+                        
+                        <input type="radio" id="maestrocard" name="cardtype">
+                        <label for="maestrocard"><img src="./assets/maestro.png"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Card Number</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Name on Card</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Expiry Date</td>
+                    <td>
+                        <input class="smallin" type="number" placeholder="mm" max="12" min="1"> / <input class="smallin" type="number" placeholder="yy" min="2020">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">CVV</td>
+                    <td>
+                        <input class="smallin" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <a href="orderconfirm.html"><button id="pay" type="button">Pay Now</button></a>
+                    </td>
+                </tr>
+            </table>
+        </form>      
+        
+    </body>
+</html>

@@ -1,0 +1,48 @@
+img {
+    height: 50px;
+}
+
+.types {
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 2px solid darkgray;
+    width: 60%;
+    box-shadow: 3px 3px darkgray;
+}
+
+.types th {
+    padding: 1rem;
+    border-bottom: 2px solid darkgray;
+    background: linear-gradient(to left, #66ffcc 0%, #ccffff 100%);
+}
+
+.types td {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.types img {
+    margin: 0 1rem 0 1rem;
+}
+
+.smallin {
+    width: 3rem;
+}
+
+#pay {
+    padding: 0.5rem;
+    font-size: 16px;
+    width: 8rem;
+    background: linear-gradient(to right, #dcad4a 0%, #fcda28 100%);
+    border-radius: 0.5rem;
+    border: 2px solid black;
+}
+
+#pay:hover {
+    cursor: pointer;
+}
+
+#pay:focus {
+    outline: none;
+}

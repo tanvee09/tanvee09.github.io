@@ -1,0 +1,59 @@
+.delivery, table, .ordno {
+    text-align: center;
+}
+
+.step {
+    height: 3rem;
+    width: 100%;
+    background: linear-gradient(to right, #66ffcc 0%, #ccffff 100%);
+    padding: 0;
+}
+
+.curr {
+    border-bottom: 3px solid black;
+}
+
+.ordno {
+    letter-spacing: 2px;
+    margin-top: 3rem;
+}
+
+.items {
+    margin-top: 3rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.items td {
+    padding: 1rem;
+    border-bottom: 2px solid darkgray;
+}
+
+.header {
+    background: linear-gradient(to left, #66ffcc 0%, #ccffff 100%);
+}
+
+.header td {
+    border-bottom: 2px solid rgb(117, 117, 117);
+    border-top: 2px solid rgb(117, 117, 117);
+}
+
+.items img {
+    height: 8rem;
+}
+
+.summary {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+}
+
+.summary table, .summary p, h4 {
+    text-align: left;
+}
+.summary td {
+    padding: 0rem 2rem 1rem 0rem;
+}

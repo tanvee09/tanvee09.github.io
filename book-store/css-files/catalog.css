@@ -1,0 +1,81 @@
+.heading {
+    margin-top: 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    background: linear-gradient(to left, #66ffcc 0%, #ccffff 100%);
+}
+
+.heading .title {
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.heading p {
+    display: inline;
+}
+
+.heading .seemore {
+    text-decoration: underline;
+    color: blue;
+    float: right;
+    margin-right: 2rem;
+}
+
+.books {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cat {
+    display: inline-block;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.book {
+    display: inline-block;
+    padding: 1rem 3.5rem 1rem 3.5rem;
+}
+
+.cat a, .book a {
+    text-decoration: none;
+    color: black;
+}
+
+.book a:hover {
+    color: orange;
+}
+
+.cat img {
+    background-color: #e4e6e6;
+    border-radius: 50%;
+}
+
+.cat p, .book p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.book img {
+    height: 150px;
+    /* width: 130px; */
+}
+
+.book .booktitle {
+    font-weight: bold;
+}
+
+.checked {
+    color: orange;
+}
+
+.book .dets {
+    color: darkgray;
+}
+
+.cart a {
+    text-decoration: underline;
+    color: blue;
+}
