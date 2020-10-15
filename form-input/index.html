@@ -13,17 +13,16 @@
         <div class="cont" id="inp">
             <h1>Enter Details</h1>
             <form>
-                <input type="text" id="studentname" placeholder="Name"/>
-                <input type="text" id="branch" placeholder="Branch"/>
-                <input type="text" id="rno" placeholder="Roll Number"/>
+                <input type="text" id="studentname" placeholder="Name" required/>
+                <input type="text" id="branch" placeholder="Branch" required/>
+                <input type="text" id="rno" placeholder="Roll Number" required/>
+                <input type="file"  accept="image/*" name="image" id="file" onchange="loadFile(event)">
                 <button type="button" onclick="printForm()">Print Details</button>              
             </form>
         </div>
 
-
-
         <div class="cont" id="output">
-            <img id="me" src="./defaultuser.png">
+            <img id="me">
             <div class="dets">
                 <h2 class="detsfield" id="outputname"></h2>
             </div>

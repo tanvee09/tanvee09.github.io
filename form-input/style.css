@@ -49,7 +49,7 @@ form {
     margin: 1rem 0;
 }
 
-input[type=text], button {
+input[type=text], button, input[type=file] {
     width: 95%;
     height: 2.5rem;
     padding: 0.25rem;

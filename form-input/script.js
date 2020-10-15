@@ -10,3 +10,8 @@ function printForm() {
     document.getElementById('inp').style.display = 'none';
     document.getElementById('output').style.display = 'inherit';
 }
+
+var loadFile = function(event) {
+	var image = document.getElementById('me');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
