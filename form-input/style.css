@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    background-image: url(./cool-background.png);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#me {
+    border-radius: 50%;
+    border: 5px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px 20px 0px;
+    transition: transform 0.5s;
+}
+
+.cont{
+    width: 400px;
+    padding: 25px 25px;
+    margin: 20vh auto;
+    background: rgba(155, 155, 155, 0.7);
+    border-radius: 8px;
+}
+
+.detsfield {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+.dets {
+    background-color: white;
+    padding: 8px;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+input[type=text], button {
+    width: 95%;
+    height: 2.5rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    margin: 0.5rem 0;
+}
+
+input[type=text]:focus, button:focus {
+    outline: none;
+}
+
+form button {
+    width: 97%;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(97, 212, 149);
+    cursor: pointer;
+}
+
+#output {
+    display: none;
+}
